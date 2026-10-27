@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NUNNTEK LLC — Computer Repair &amp; Network Setup</title>
+<meta name="description" content="NUNNTEK LLC: computer repair and network setup. Diagnostics, repair, upgrades, and home and small-business networks set up right.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0b0f14; color:#e8eef4; font-family:'Segoe UI', Arial, sans-serif; }
+  a { text-decoration:none; }
+  .wrap { max-width:1200px; margin:0 auto; padding:0 40px; }
+  /* Top bar */
+  .topbar { display:flex; align-items:center; justify-content:space-between; padding:16px 40px; background:#10161e; border-bottom:1px solid #232f3d; position:sticky; top:0; z-index:10; }
+  .logo { font-size:24px; font-weight:800; letter-spacing:2px; }
+  .logo span { color:#3b9dff; }
+  .logo small { display:block; font-size:10px; font-weight:600; letter-spacing:3px; color:#8fa1b3; margin-top:2px; }
+  .nav a { color:#a9baca; margin:0 14px; font-size:15px; }
+  .nav a:hover { color:#fff; }
+  .btn-cta { background:#1f6feb; color:#fff; font-weight:700; padding:11px 24px; border-radius:8px; font-size:15px; white-space:nowrap; }
+  .btn-cta:hover { background:#3b9dff; }
+  /* Hero */
+  .hero { border-radius:16px; margin-top:28px; border:1px solid #232f3d;
+    background:
+      radial-gradient(800px 380px at 88% -10%, rgba(59,157,255,.18), rgba(59,157,255,0) 60%),
+      linear-gradient(120deg, #131a23 0%, #0d1319 60%, #0b0f14 100%); }
+  .hero .content { padding:68px 44px; }
+  .hero .kicker { color:#3b9dff; font-weight:700; font-size:13px; letter-spacing:3px; margin-bottom:16px; }
+  .hero h1 { font-size:58px; font-weight:800; line-height:1.08; letter-spacing:.5px; }
+  .hero h1 .blue { color:#3b9dff; }
+  .hero p { margin-top:18px; font-size:18px; color:#c3d0dd; max-width:620px; line-height:1.55; }
+  .cta-row { display:flex; gap:16px; margin-top:32px; flex-wrap:wrap; }
+  .btn-blue { background:#1f6feb; color:#fff; font-weight:700; padding:14px 30px; border-radius:8px; font-size:15px; }
+  .btn-blue:hover { background:#3b9dff; }
+  .btn-ghost { border:1px solid #3a4a5c; color:#e8eef4; font-weight:700; padding:14px 30px; border-radius:8px; font-size:15px; }
+  .btn-ghost:hover { border-color:#3b9dff; color:#3b9dff; }
+  /* Sections */
+  h2.sec { font-size:30px; font-weight:800; margin:60px 0 6px; }
+  .rule { width:56px; height:4px; background:#1f6feb; border-radius:2px; margin-bottom:24px; }
+  .sub { color:#a9baca; font-size:16px; margin:-12px 0 26px; max-width:820px; line-height:1.55; }
+  /* Services */
+  .grid2 { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+  .svc-card { background:#131a23; border:1px solid #232f3d; border-radius:14px; padding:34px 30px; }
+  .svc-card .icon { font-size:34px; margin-bottom:16px; }
+  .svc-card h3 { font-size:22px; margin-bottom:10px; }
+  .svc-card p { color:#a9baca; font-size:15px; line-height:1.6; }
+  .svc-card ul { list-style:none; margin-top:16px; }
+  .svc-card ul li { color:#c3d0dd; font-size:15px; padding:7px 0 7px 26px; position:relative; border-top:1px solid #1d2836; }
+  .svc-card ul li::before { content:"▸"; color:#3b9dff; position:absolute; left:2px; font-weight:700; }
+  /* Process */
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .step { background:#10161e; border:1px solid #232f3d; border-radius:14px; padding:26px 24px; }
+  .step .num { color:#3b9dff; font-size:26px; font-weight:800; margin-bottom:10px; }
+  .step h3 { font-size:17px; margin-bottom:8px; }
+  .step p { color:#a9baca; font-size:14px; line-height:1.55; }
+  /* CTA band */
+  .band { background:linear-gradient(120deg, #12233a, #0d1622); border:1px solid #1f6feb; border-radius:16px; padding:40px 36px; display:flex; align-items:center; gap:28px; margin-top:64px; }
+  .band .txt { flex:1; }
+  .band h3 { font-size:25px; margin-bottom:8px; }
+  .band p { color:#c3d0dd; font-size:16px; line-height:1.55; }
+  /* Footer */
+  footer { border-top:1px solid #232f3d; margin-top:64px; padding:26px 40px 40px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; color:#8fa1b3; font-size:14px; }
+  footer .brand { color:#e8eef4; font-weight:700; letter-spacing:1px; }
+  @media (max-width:900px){ .grid2{grid-template-columns:1fr;} .grid3{grid-template-columns:1fr;} .hero h1{font-size:38px;} .wrap{padding:0 20px;} .topbar{padding:14px 20px;} .nav{display:none;} .band{flex-direction:column; align-items:flex-start;} .hero .content{padding:44px 26px;} footer{padding:26px 20px 40px;} }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="logo">NUNN<span>TEK</span><small>COMPUTER REPAIR · NETWORK SETUP</small></div>
+  <div class="nav">
+    <a href="#services">Services</a><a href="#how">How It Works</a><a href="#contact">Contact</a>
+  </div>
+  <a class="btn-cta" href="mailto:pure&#97;rt2000llc&#64;gmail.com?subject=Service%20Request">Request service</a>
+</div>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="content">
+      <div class="kicker">HARDWARE, HANDLED</div>
+      <h1>Computer repair &amp; <span class="blue">network setup</span>, done right.</h1>
+      <p>NUNNTEK keeps your machines and your network running. When a computer goes down or a network needs building, you get a clear diagnosis, honest work, and gear that does its job.</p>
+      <div class="cta-row">
+        <a class="btn-blue" href="mailto:pure&#97;rt2000llc&#64;gmail.com?subject=Service%20Request">REQUEST SERVICE</a>
+        <a class="btn-ghost" href="#services">SEE SERVICES</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sec" id="services">SERVICES</h2>
+  <div class="rule"></div>
+  <p class="sub">Two things, done properly: fixing computers and setting up networks.</p>
+  <div class="grid2">
+    <div class="svc-card">
+      <div class="icon">🖥️</div>
+      <h3>Computer Repair</h3>
+      <p>Diagnostics, repair and upgrades for desktop and laptop computers. Running slow, refusing to start, or just not acting right — we find the problem and get the machine back to work.</p>
+      <ul>
+        <li>Full diagnostics to pinpoint the fault</li>
+        <li>Repair of hardware problems</li>
+        <li>Upgrades for speed and storage</li>
+        <li>Machines tested before they go back to you</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="icon">📶</div>
+      <h3>Network Setup</h3>
+      <p>Network setup for homes and small businesses — including Wi-Fi setup — so every device connects, stays connected, and reaches the speed you're paying for.</p>
+      <ul>
+        <li>Home network setup</li>
+        <li>Small-business network setup</li>
+        <li>Wi-Fi setup and coverage fixes</li>
+        <li>Routers and connected devices configured</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="sec" id="how">HOW IT WORKS</h2>
+  <div class="rule"></div>
+  <div class="grid3">
+    <div class="step">
+      <div class="num">01</div>
+      <h3>Reach out</h3>
+      <p>Send a service request and tell us what's happening with your computer or network.</p>
+    </div>
+    <div class="step">
+      <div class="num">02</div>
+      <h3>We diagnose</h3>
+      <p>We track down the problem and explain what it takes to fix it, in plain language.</p>
+    </div>
+    <div class="step">
+      <div class="num">03</div>
+      <h3>Back up and running</h3>
+      <p>The repair or setup is completed and tested, so you can get back to work.</p>
+    </div>
+  </div>
+
+  <div class="band" id="contact">
+    <div class="txt">
+      <h3>Machine down? Network to build?</h3>
+      <p>Tell us what you're dealing with and we'll take it from there. One email starts the job.</p>
+    </div>
+    <a class="btn-blue" href="mailto:pure&#97;rt2000llc&#64;gmail.com?subject=Service%20Request">REQUEST SERVICE</a>
+  </div>
+</div>
+
+<footer>
+  <div class="brand">© NUNNTEK LLC</div>
+  <div>Computer Repair · Network Setup</div>
+</footer>
+</body>
+</html>
