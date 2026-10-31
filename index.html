@@ -47,6 +47,10 @@
   .svc-card ul { list-style:none; margin-top:16px; }
   .svc-card ul li { color:#c3d0dd; font-size:15px; padding:7px 0 7px 26px; position:relative; border-top:1px solid #1d2836; }
   .svc-card ul li::before { content:"▸"; color:#3b9dff; position:absolute; left:2px; font-weight:700; }
+  .svc-card .payprice { font-size:32px; font-weight:800; margin:6px 0 8px; }
+  .svc-card .btn-blue { display:inline-block; margin-top:20px; }
+  .paynote { color:#a9baca; font-size:15px; margin-top:20px; }
+  .paynote a { color:#3b9dff; font-weight:700; }
   /* Process */
   .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
   .step { background:#10161e; border:1px solid #232f3d; border-radius:14px; padding:26px 24px; }
@@ -68,7 +72,7 @@
 <div class="topbar">
   <div class="logo">NUNN<span>TEK</span><small>COMPUTER REPAIR · NETWORK SETUP</small></div>
   <div class="nav">
-    <a href="#services">Services</a><a href="#how">How It Works</a><a href="#contact">Contact</a>
+    <a href="#services">Services</a><a href="#how">How It Works</a><a href="#pay">Book &amp; Pay</a><a href="#contact">Contact</a>
   </div>
   <a class="btn-cta" href="mailto:pure&#97;rt2000llc&#64;gmail.com?subject=Service%20Request">Request service</a>
 </div>
@@ -134,10 +138,31 @@
     </div>
   </div>
 
+  <h2 class="sec" id="pay">BOOK &amp; PAY ONLINE</h2>
+  <div class="rule"></div>
+  <p class="sub">Skip the back-and-forth — book a session or settle a service payment online, securely through Stripe.</p>
+  <div class="grid2">
+    <div class="svc-card">
+      <div class="icon">💻</div>
+      <h3>Tech Support Session</h3>
+      <div class="payprice">$14.99</div>
+      <p>Book a tech support session and pay up front — remote help for computer problems, questions and quick fixes, from the same team that repairs your machine.</p>
+      <a class="btn-blue" href="https://pay.nunntek.com/pureart2000techsupport">BOOK &amp; PAY — $14.99</a>
+    </div>
+    <div class="svc-card">
+      <div class="icon">🧾</div>
+      <h3>Service Payment</h3>
+      <div class="payprice">$35</div>
+      <p>Paying for a computer repair or a network setup service? Settle your $35 service payment online in about a minute — no account needed.</p>
+      <a class="btn-blue" href="https://pay.nunntek.com/00b06015-0a57-46ad-81d1-ed3">PAY $35 ONLINE</a>
+    </div>
+  </div>
+  <p class="paynote">Paying an invoice or a different amount? Use our payment page: <a href="https://pay.nunntek.com">pay.nunntek.com</a></p>
+
   <div class="band" id="contact">
     <div class="txt">
       <h3>Machine down? Network to build?</h3>
-      <p>Tell us what you're dealing with and we'll take it from there. One email starts the job.</p>
+      <p>Tell us what you're dealing with and we'll take it from there. One email starts the job. Serving Tampa homes &amp; small businesses.</p>
     </div>
     <a class="btn-blue" href="mailto:pure&#97;rt2000llc&#64;gmail.com?subject=Service%20Request">REQUEST SERVICE</a>
   </div>
@@ -145,7 +170,7 @@
 
 <footer>
   <div class="brand">© NUNNTEK LLC</div>
-  <div>Computer Repair · Network Setup</div>
+  <div>Computer Repair · Network Setup · <a href="https://pay.nunntek.com" style="color:#3b9dff;">Pay online</a></div>
 </footer>
 </body>
 </html>
